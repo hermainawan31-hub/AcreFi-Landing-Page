@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AcreFi — Launch Beta App</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="LP.css" />
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+  
+  <style>
+    /* Custom page-specific styling matching the BloomFi design guidelines */
+    .beta-section {
+      position: relative;
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 20px;
+      overflow: hidden;
+    }
+
+    .beta-container {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 550px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .beta-panel {
+      background: rgba(20, 16, 34, 0.6);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 50px 40px;
+      border-radius: 24px;
+      text-align: center;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
+      width: 100%;
+    }
+
+    .beta-panel h1 {
+      font-family: 'Sora', sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
+
+    .beta-panel p {
+      font-family: 'Inter', sans-serif;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 16px;
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+
+    .beta-panel .btn {
+      width: 100%;
+      padding: 16px;
+      font-weight: 600;
+      justify-content: center;
+      font-size: 16px;
+    }
+
+    .back-home {
+      display: inline-block;
+      margin-top: 24px;
+      color: rgba(255, 255, 255, 0.5);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .back-home:hover {
+      color: #ffffff;
+    }
+    
+    .back-home span {
+      margin-right: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">✦</span>
+        <span class="brand-text">AcreFi</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <div class="nav-links">
+          
+          <a href="index.html">Main Page</a>
+          <a href="index.html#partners">Partners</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="index.html#contact" class="btn btn-outline">Join Waitlist</a>
+          <a href="#" class="btn btn-primary">Launch Beta</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="beta-section">
+    <div class="hero-bg-glow glow-1"></div>
+    <div class="hero-bg-glow glow-2"></div>
+
+    <div class="container beta-container">
+      <div class="beta-panel">
+        <span class="eyebrow" style="margin-bottom: 12px; display: inline-block;">Beta Access</span>
+        <h1>Welcome to AcreFi BETA</h1>
+        <p>
+          Connect your Web3 wallet to start interacting with programmable, yield-bearing stable strategies natively.
+        </p>
+        
+        <button class="btn btn-primary">Connect Wallet</button>
+        
+        <a href="index.html" class="back-home"><span>←</span> Return Website Home</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-col brand-col">
+        <a href="index.html" class="footer-brand">
+          <span class="brand-mark">✦</span>
+          <span class="brand-text">AcreFi</span>
+        </a>
+        <p class="footer-brand-text">
+          AcreFi is building programmable stablecoin infrastructure for capital-efficient,
+          yield-bearing digital dollars.
+        </p>
+        <div class="social-links">
+          <a href="#">in</a>
+          <a href="#">𝕏</a>
+          <a href="#">git</a>
+          <a href="#">ig</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Protocol</h4>
+        <ul>
+          <li><a href="index.html#about">USD Acre</a></li>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#how-it-works">How it works</a></li>
+          <li><a href="index.html#use-cases">Use cases</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Developers</h4>
+        <ul>
+          <li><a href="developer.html">Developer Portal</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Audit Reports</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html#partners">Partners</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 AcreFi. All rights reserved.</p>
+        <p>Built for DeFi-native finance.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

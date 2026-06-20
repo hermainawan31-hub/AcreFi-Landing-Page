@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BloomFi — Explore Protocol</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="LP.css" />
+
+  <style>
+    /* Custom page-specific styling matching the BloomFi design guidelines */
+    .explore-section {
+      position: relative;
+      padding: 100px 0 140px 0;
+      overflow: hidden;
+    }
+
+    .explore-container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .explore-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .explore-header h1 {
+      font-family: 'Sora', sans-serif;
+      font-size: 44px;
+      font-weight: 700;
+      letter-spacing: -1px;
+      color: #000000;
+      margin-bottom: 16px;
+    }
+
+    .explore-header p {
+      font-family: 'Inter', sans-serif;
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 18px;
+      max-width: 650px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* Feature Grid Layout unified with the feature section */
+    .explore-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .explore-feature-card {
+      background: rgba(20, 16, 34, 0.6);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 24px;
+      padding: 40px 30px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .explore-feature-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .explore-card-icon {
+      font-size: 24px;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    .explore-feature-card h3 {
+      font-family: 'Sora', sans-serif;
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .explore-feature-card p {
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.65);
+      line-height: 1.6;
+    }
+
+    .explore-actions {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 900px) {
+      .explore-grid {
+        grid-template-columns: 1fr;
+      }
+      .explore-header h1 {
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">✦</span>
+        <span class="brand-text">BloomFi</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <div class="nav-links">
+          
+          
+          <a href="index.html#partners">Partners</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="index.html#contact" class="btn btn-outline">Join Waitlist</a>
+          <a href="beta.html" class="btn btn-primary">Launch Beta</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="explore-section">
+    <div class="hero-bg-glow glow-1"></div>
+    <div class="hero-bg-glow glow-2"></div>
+
+    <div class="container explore-container">
+      <div class="explore-header">
+        <span class="section-tag" style="margin-bottom: 12px;">✦ Deep Dive</span>
+        <h1>Deep Dive into BloomFi</h1>
+        <p>Discover how our programmable mechanics build a more efficient, yield-bearing ecosystem for your capital.</p>
+      </div>
+
+      <div class="explore-grid">
+        <div class="explore-feature-card">
+          <div class="explore-card-icon">✦</div>
+          <h3>Auto-Compounding</h3>
+          <p>Yield updates natively on-chain. Your balance increases directly inside your wallet infrastructure without manual locking actions.</p>
+        </div>
+
+        <div class="explore-feature-card">
+          <div class="explore-card-icon">◎</div>
+          <h3>Peg Stability Module</h3>
+          <p>Backing structures securely maintain alignment with the U.S. Dollar using multi-layered basket reserves and routing algorithms.</p>
+        </div>
+
+        <div class="explore-feature-card">
+          <div class="explore-card-icon">✦</div>
+          <h3>Zero Friction</h3>
+          <p>Enter or exit the ecosystem fluidly. No hidden performance penalties, no minimum limits, and instant structural liquidity.</p>
+        </div>
+      </div>
+
+      <div class="explore-actions">
+        <a href="index.html" class="btn btn-primary btn-lg">← Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-col brand-col">
+        <a href="index.html" class="footer-brand">
+          <span class="brand-mark">✦</span>
+          <span class="brand-text">BloomFi</span>
+        </a>
+        <p class="footer-brand-text">
+          BloomFi is building programmable stablecoin infrastructure for capital-efficient,
+          yield-bearing digital dollars.
+        </p>
+        <div class="social-links">
+          <a href="#">in</a>
+          <a href="#">𝕏</a>
+          <a href="#">git</a>
+          <a href="#">ig</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Protocol</h4>
+        <ul>
+          <li><a href="index.html#about">USD Bloom</a></li>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#how-it-works">How it works</a></li>
+          <li><a href="index.html#use-cases">Use cases</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Developers</h4>
+        <ul>
+          <li><a href="developer.html">Developer Portal</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Audit Reports</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html#partners">Partners</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 BloomFi. All rights reserved.</p>
+        <p>Built for DeFi-native finance.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
