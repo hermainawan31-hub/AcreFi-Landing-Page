@@ -1048,205 +1048,65 @@ a {
 /* =========================
    RESPONSIVE
 ========================= */
-@media (max-width: 1250px) {
-  .hero-grid,
-  .about-section,
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .features-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .feature-card-large {
-    grid-column: 1 / -1;
-  }
-
-  .stats-grid,
-  .steps-grid,
-  .usecases-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .partners-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .hero-right {
-    min-height: auto;
-  }
-
-  .hero-main-card,
-  .hero-visual {
-    min-height: 520px;
-  }
-
-  .floating-card-1 {
-    top: 20px;
-    left: 20px;
-  }
-
-  .floating-card-2 {
-    right: 20px;
-    bottom: 20px;
-  }
-}
-
-@media (max-width: 980px) {
-  .site-header {
-    padding: 14px 0;
-  }
-
-  .navbar {
-    position: relative;
-    padding: 16px 18px;
-  }
-
+/* Mobile Navigation Styling */
+@media (max-width: 768px) {
+  /* Show the hamburger menu button toggle */
   .menu-toggle {
-    display: block;
-    margin-left: auto;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
   }
 
+  .menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+  }
+
+  /* Hide the navbar links off-screen by default on mobile */
   .nav-menu {
-    position: absolute;
-    top: calc(100% + 12px);
-    left: 0;
-    right: 0;
-    background: rgba(18, 11, 38, 0.96);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 22px;
-    padding: 18px;
-    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%; /* Invisible and off-screen to the right */
+    width: 250px; /* Width of your drawer menu */
+    height: 100vh;
+    background: #141022; /* Matches your AcreFi dark background theme */
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
-    box-shadow: var(--shadow-dark);
+    padding: 100px 30px 40px 30px;
+    transition: right 0.3s ease; /* Smooth slide-in animation */
+    z-index: 998;
   }
 
+  /* The class that JavaScript will add to bring it onto the screen */
   .nav-menu.active {
-    display: flex;
+    right: 0; /* Slides into view */
   }
 
   .nav-links {
-    margin-left: 0;
-    width: 100%;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 18px;
+    gap: 24px;
+    width: 100%;
+    margin-bottom: 40px;
   }
 
   .nav-actions {
-    width: 100%;
     flex-direction: column;
-    align-items: stretch;
+    width: 100%;
+    gap: 16px;
   }
 
   .nav-actions .btn {
     width: 100%;
-  }
-
-  .hero-left {
-    padding: 42px 28px;
-  }
-
-  .hero-right {
-    min-height: auto;
-  }
-
-  .about-left,
-  .about-right,
-  .contact-left,
-  .contact-form-box {
-    padding: 28px;
-  }
-
-  .features-grid,
-  .steps-grid,
-  .usecases-grid,
-  .stats-grid,
-  .partners-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .cta-band-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 34px 24px;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 640px) {
-  .hero-section {
-    padding-top: 30px;
-  }
-
-  .hero-left h1 {
-    font-size: 42px;
-  }
-
-  .hero-text {
-    font-size: 15px;
-  }
-
-  .hero-main-card,
-  .hero-visual {
-    min-height: 420px;
-  }
-
-  .hero-card-overlay {
-    left: 18px;
-    right: 18px;
-    bottom: 18px;
-    padding: 20px;
-  }
-
-  .hero-card-overlay h3 {
-    font-size: 22px;
-  }
-
-  .hero-floating-card {
-    position: static;
-    margin-top: 16px;
-  }
-
-  .feature-background-wrap,
-  .partners-section,
-  .how-section,
-  .usecases-section,
-  .cta-band,
-  .contact-section {
-    padding-bottom: 80px;
-  }
-
-  .feature-background-wrap {
-    padding-top: 80px;
-  }
-
-  .about-left h2,
-  .section-head h2,
-  .contact-left h2 {
-    font-size: 34px;
-  }
-
-  .feature-card-content,
-  .dark-card,
-  .step-card,
-  .usecase-content {
-    padding: 24px;
-  }
-
-  .feature-card-content h3,
-  .dark-card h3,
-  .usecase-content h3 {
-    font-size: 24px;
+    justify-content: center;
   }
 }
