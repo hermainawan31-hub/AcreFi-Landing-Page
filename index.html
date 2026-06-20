@@ -9,8 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="LP.css?v=1.1" />
-  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+  <link rel="stylesheet" href="LP.css" />
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+  
 </head>
 <body>
 
@@ -21,239 +22,345 @@
         <span class="brand-text">AcreFi</span>
       </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
+      
       <div class="nav-menu" id="navMenu">
         <div class="nav-links">
-          <a href="#about">USD Acre</a>
+         
           <a href="#features">Features</a>
           <a href="#how-it-works">How it works</a>
           <a href="#use-cases">Use cases</a>
           <a href="#partners">Partners</a>
           <a href="#contact">Contact</a>
+          <a href="http://127.0.0.1:5500/developer.html">Developer</a>
         </div>
 
         <div class="nav-actions">
-          <a href="#contact" class="btn btn-outline">Join Waitlist</a>
+          <a href="#" class="btn btn-outline">Join Waitlist</a>
           <a href="beta.html" class="btn btn-primary">Launch Beta</a>
         </div>
       </div>
     </nav>
   </header>
 
-  <main>
-    <section class="hero-section">
-      <div class="container hero-grid">
-        <div class="hero-main-card">
-          <div class="hero-left">
-            <div class="tag-container">
-              <span class="eyebrow">Programmable Yield-Bearing Stablecoin</span>
-            </div>
-            <h1>Where Money Grows</h1>
-            <p class="hero-text">
-              A programmable, utility-driven stable token designed for native value accrual and seamless integration into DeFi.
+  <section class="hero-section">
+    <div class="hero-bg-glow glow-1"></div>
+    <div class="hero-bg-glow glow-2"></div>
+
+    <div class="container hero-overlay-container">
+      <div class="hero-bg-image-wrap">
+        <img src="purple.png (1).jpg" alt="BloomFi Background" class="hero-bg-visual" />
+        <div class="hero-bg-overlay-shade"></div>
+      </div>
+
+      <div class="hero-overlay-content">
+        <span class="eyebrow">Programmable Yield-Bearing Stablecoin</span>
+        <h1>Where Money Grows</h1>
+        <p class="hero-text">
+          A programmable, utility-driven stable token designed for native value accrual and seamless integration into DeFi.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#about" class="btn btn-primary btn-lg">Explore USD Acre</a>
+          <a href="#contact" class="btn btn-secondary btn-lg">Talk to the team</a>
+        </div>
+
+        <div class="hero-trust">
+          <div class="trust-chip">Secure by design</div>
+          <div class="trust-chip">Built for DeFi-native finance</div>
+          <div class="trust-chip">Always liquid</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="stats-section">
+    <div class="container stats-grid">
+      <div class="stat-card">
+        <h3>$120M+</h3>
+        <p>Illustrative TVL potential for institutional-grade treasury products.</p>
+      </div>
+      <div class="stat-card">
+        <h3>24/7</h3>
+        <p>Always-on liquidity and on-chain accessibility for users and businesses.</p>
+      </div>
+      <div class="stat-card">
+        <h3>3+</h3>
+        <p>Yield strategy layers designed to optimize stable capital deployment.</p>
+      </div>
+      <div class="stat-card">
+        <h3>100%</h3>
+        <p>Hands-free experience — no manual strategy management required.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-background-wrap" id="about">
+    <div class="feature-bg-overlay"></div>
+
+    <div class="container">
+      <div class="about-section">
+        <div class="about-left">
+          <span class="section-tag">✦ About USD Acre</span>
+          <h2>What is USD Acre?</h2>
+          <p>
+            USD Acre is a yield-bearing stablecoin that helps your capital grow
+            while staying pegged to the U.S. dollar. It combines stable-value utility
+            with automated yield generation, allowing individuals, treasuries, and
+            platforms to earn without adding operational complexity.
+          </p>
+          <div class="about-actions">
+            <a href="explore.html" class="btn btn-primary">Explore now</a>
+            <a href="#how-it-works" class="btn btn-ghost-light">How it works</a>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <div class="about-highlight-card">
+            <div class="highlight-icon">✦</div>
+            <h3>Stable. Productive. Composable.</h3>
+            <p>
+              Designed for DeFi-native finance, BloomFi transforms idle stablecoin
+              balances into productive capital while preserving accessibility and
+              user simplicity.
             </p>
-            <div class="hero-actions">
-              <a href="explore.html" class="btn btn-primary">Explore USD Acre</a>
-              <a href="#contact" class="btn btn-outline">Talk to the team</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <div class="hero-bg-glow glow-1"></div>
-          <div class="hero-bg-glow glow-2"></div>
-          <div style="z-index: 2; color: #ffffff; text-align: center; padding: 40px;">
-            <p style="font-family: 'Sora', sans-serif; font-size: 24px; font-weight: 700; margin-bottom: 12px;">Secure by design</p>
-            <p style="color: var(--text-light); font-size: 15px; max-width: 300px; margin: 0 auto; margin-bottom: 24px;">Built for DeFi-native finance</p>
-            <span class="eyebrow" style="background: rgba(255,255,255,0.08); color: #ffffff; border: 1px solid rgba(255,255,255,0.1);">Always liquid</span>
           </div>
         </div>
       </div>
-    </section>
 
-    <section id="about" class="about-section container">
-      <div class="about-left">
-        <span class="section-tag">✦ What is USD Acre</span>
-        <h2 class="section-title">The Next Evolution of Digital Capital</h2>
-        <p class="section-desc">
-          USD Acre is a fully backed stablecoin that natively generates utility and yield direct to wallet infrastructures, removing outdated locking or staking mechanisms.
+      <div class="features-grid" id="features">
+        <article class="feature-card feature-card-large">
+          <div class="feature-card-image-wrap">
+            <img src="purple.png (1).jpg" alt="Capital Growth Flower" class="feature-card-image" />
+            <div class="feature-image-overlay"></div>
+          </div>
+          <div class="feature-card-content">
+            <span class="feature-pill">Yield Generation</span>
+            <h3>Capital that grows</h3>
+            <p>
+              Earn passive income as your stablecoins are deployed into carefully
+              selected high-performing DeFi protocols and yield strategies.
+            </p>
+          </div>
+        </article>
+
+        <article class="feature-card dark-card">
+          <div class="feature-icon">◎</div>
+          <h3>Always liquid, always stable</h3>
+          <p>
+            Stay fully dollar-pegged with fast access to your funds — no lockups,
+            no unnecessary friction, and no strategy juggling.
+          </p>
+        </article>
+
+        <article class="feature-card dark-card">
+          <div class="feature-icon">✦</div>
+          <h3>100% hands-free</h3>
+          <p>
+            BloomFi works in the background for you. No manual portfolio management,
+            no complex dashboards, and no constant rebalancing.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="partners-section" id="partners">
+    <div class="container">
+      <div class="section-head center">
+        <span class="section-tag">✦ Trusted Ecosystem</span>
+        <h2>Backed by forward-looking teams and infrastructure partners</h2>
+        <p>
+          AcreFi is designed to integrate with builders, treasury operators,
+          exchanges, and institutional DeFi participants.
         </p>
       </div>
-      <div class="about-right">
-        <div class="hero-bg-glow glow-1"></div>
-        <h3 style="font-size: 24px; margin-bottom: 16px;">Strategic Allocation Layer</h3>
-        <p style="color: var(--text-light); font-size: 15px; line-height: 1.6;">
-          Backing structures prioritize low-risk, tokenized liquid real-world instruments alongside market-neutral algorithmic reserves to protect price baselines consistently.
+
+      <div class="partners-grid">
+        <div class="partner-item">FONTLY LABS</div>
+        <div class="partner-item">KUCOIN</div>
+        <div class="partner-item">NGC</div>
+        <div class="partner-item">NxGen</div>
+        <div class="partner-item">Matter Labs</div>
+        <div class="partner-item">DEXTOOLS</div>
+        <div class="partner-item">NGRAVE</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-section" id="how-it-works">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">✦ How It Works</span>
+        <h2>Simple for users. Powerful under the hood.</h2>
+        <p>
+          AcreFi is built to make yield-bearing stable assets easy to use while
+          preserving the flexibility needed for advanced treasury and platform use cases.
         </p>
-        <div class="about-actions">
-          <a href="explore.html" class="btn btn-primary" style="background: #ffffff; color: var(--bg-dark);">Learn Mechanics</a>
-        </div>
       </div>
-    </section>
-
-    <section class="stats-section container">
-      <div class="stats-grid">
-        <div class="stat-item">
-          <div class="stat-number">$1.00</div>
-          <div class="stat-label">Target Peg Baseline</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">Up to 8%</div>
-          <div class="stat-label">Variable Native Yield</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">&lt; 2s</div>
-          <div class="stat-label">Settlement Fluidity</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">100%</div>
-          <div class="stat-label">On-Chain Transparent Attestation</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="features" class="container" style="padding: 60px 0;">
-      <span class="section-tag">✦ Protocol Edge</span>
-      <h2 class="section-title">Engineered For Utility</h2>
-      <p class="section-desc">Discover the technological features making our ecosystem scalable, secure, and capital-efficient.</p>
-      
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="card-icon">⚙</div>
-          <h3>Programmable Flow</h3>
-          <p style="font-size: 15px; color: var(--text-body);">Route yields dynamically to secondary operational contracts or yield-split addresses natively.</p>
-        </div>
-        <div class="feature-card">
-          <div class="card-icon">🛡</div>
-          <h3>Multi-Asset Vaults</h3>
-          <p style="font-size: 15px; color: var(--text-body);">Sustained alignment protected by distributed basket variables monitored continuously on-chain.</p>
-        </div>
-        <div class="feature-card">
-          <div class="card-icon">⚡</div>
-          <h3>Instant Redemptions</h3>
-          <p style="font-size: 15px; color: var(--text-body);">Convert assets fluidly back into primary liquidity pools without lockups or processing delay frames.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="how-it-works" class="container" style="padding: 60px 0;">
-      <span class="section-tag">✦ Lifecycle Steps</span>
-      <h2 class="section-title">How AcreFi Operates</h2>
-      <p class="section-desc">A transparent blueprint detailing how value shifts safely through our infrastructure layers.</p>
 
       <div class="steps-grid">
-        <div class="step-card">
-          <div class="card-icon" style="font-family: 'Sora', sans-serif; font-weight: 800;">01</div>
-          <h3>Deposit Assets</h3>
-          <p style="font-size: 15px; color: var(--text-body);">Provide base stablecoin layers into our routing infrastructure smart contracts to initialize mint logs.</p>
-        </div>
-        <div class="step-card">
-          <div class="card-icon" style="font-family: 'Sora', sans-serif; font-weight: 800;">02</div>
-          <h3>Mint USD Acre</h3>
-          <p style="font-size: 15px; color: var(--text-body);">Receive newly generated utility stable tokens directly into your wallet interface with instantly active tracking.</p>
-        </div>
-        <div class="step-card">
-          <div class="card-icon" style="font-family: 'Sora', sans-serif; font-weight: 800;">03</div>
-          <h3>Accrue & Compose</h3>
-          <p style="font-size: 15px; color: var(--text-body);">Balances auto-update to reflect compound token allocation growth natively across compatible integrated protocols.</p>
-        </div>
-      </div>
-    </section>
+        <article class="step-card">
+          <div class="step-number">01</div>
+          <h3>Deposit or mint USD Acre</h3>
+          <p>
+            Users or businesses acquire USD Acre as a stable-value asset designed
+            for programmable finance and passive capital productivity.
+          </p>
+        </article>
 
-    <section id="use-cases" class="container" style="padding: 60px 0;">
-      <span class="section-tag">✦ Integration Layer</span>
-      <h2 class="section-title">Ecosystem Use Cases</h2>
-      <p class="section-desc">Unlock new liquidity strategies utilizing programmable dollar frameworks built for flexibility.</p>
+        <article class="step-card">
+          <div class="step-number">02</div>
+          <h3>Capital is allocated to yield strategies</h3>
+          <p>
+            BloomFi deploys capital into carefully selected DeFi opportunities with
+            a focus on efficiency, risk controls, and accessibility.
+          </p>
+        </article>
+
+        <article class="step-card">
+          <div class="step-number">03</div>
+          <h3>Yield accrues automatically</h3>
+          <p>
+            Users benefit from native value accrual without manually moving assets
+            between protocols or managing multiple yield positions.
+          </p>
+        </article>
+
+        <article class="step-card">
+          <div class="step-number">04</div>
+          <h3>Redeem or integrate anytime</h3>
+          <p>
+            Whether you are an individual holder, a treasury team, or a platform,
+            AcreFi keeps funds accessible and integration-ready.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="usecases-section" id="use-cases">
+    <div class="container">
+      <div class="section-head center">
+        <span class="section-tag">✦ USD Acre in Action</span>
+        <h2>Built for businesses, developers, and treasuries</h2>
+        <p>
+          AcreFi supports multiple integration models — from consumer-facing yield
+          experiences to treasury optimization and DeFi-native product infrastructure.
+        </p>
+      </div>
 
       <div class="usecases-grid">
-        <div class="usecase-card">
-          <div class="card-icon">💼</div>
-          <h3>Treasury Management</h3>
-          <p style="font-size: 15px; color: var(--text-body);">Corporate and DAO assets scale safely away from directional risk vectors while remaining instantly deployable.</p>
-        </div>
-        <div class="usecase-card">
-          <div class="nav-links"></div>
-          <h3>Automated Lending</h3>
-          <p style="font-size: 15px; color: var(--text-body);">Use yield-bearing stable balances directly as collateral structures to enhance overall cross-protocol health factors.</p>
-        </div>
-        <div class="usecase-card">
-          <div class="card-icon">🌍</div>
-          <h3>Cross-Border Settlements</h3>
-          <p style="font-size: 15px; color: var(--text-body);">Execute commercial settlements globally without volatile margin loss or intermediate banking friction points.</p>
-        </div>
-      </div>
-    </section>
+        <article class="usecase-card">
+          <img src="business.jpg" alt="Business use case" class="usecase-img" />
+          <div class="usecase-content">
+            <span class="usecase-pill">Business</span>
+            <h3>Boost user engagement with embedded yield</h3>
+            <p>
+              Offer customers a secure fiat-backed stablecoin with attractive yield
+Directly inside your product experience.
+            </p>
+            <a href="#" class="text-link">Learn more <span>→</span></a>
+          </div>
+        </article>
 
-    <section id="partners" class="partners-section container">
-      <span class="section-tag">✦ Ecosystem Network</span>
-      <h2 class="section-title">Trusted Ecosystem Partners</h2>
-      <div class="partners-grid">
-        <div class="partner-logo">✦ Apex Capital</div>
-        <div class="partner-logo">◎ BlockGuard</div>
-        <div class="partner-logo">✦ Nexus Labs</div>
-        <div class="partner-logo">◎ Vertex Vaults</div>
-      </div>
-    </section>
+        <article class="usecase-card">
+          <div class="usecase-content">
+            <span class="usecase-pill">Developers</span>
+            <h3>Composable infrastructure for on-chain products</h3>
+            <p>
+              Integrate USD Acre into wallets, apps, exchanges, and payment rails
+              using programmable stablecoin flows designed for modern DeFi ecosystems.
+            </p>
+            <a href="developer.html" class="text-link">Explore developer use cases <span>→</span></a>
+          </div>
+        </article>
 
-    <section class="cta-section container">
-      <div class="cta-band-inner">
-        <div>
-          <h2>Ready to transform your capital?</h2>
-          <p>Access the onboarding queue to pilot the next-generation programmable asset layer.</p>
-        </div>
-        <a href="beta.html" class="btn btn-primary" style="background: #ffffff; color: var(--primary); padding: 16px 32px; font-size: 16px;">Get Started Now</a>
+        <article class="usecase-card">
+          <div class="usecase-content">
+            <span class="usecase-pill">Treasuries</span>
+            <h3>Make idle treasury balances productive</h3>
+            <p>
+              Treasury operators can deploy stable balances more efficiently while
+              maintaining a user-friendly structure and ongoing liquidity access.
+            </p>
+            <a href="#" class="text-link">See treasury workflows <span>→</span></a>
+          </div>
+        </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact" class="contact-section container">
-      <div class="contact-grid">
-        <div class="contact-left">
-          <span class="section-tag">✦ Contact & Queue</span>
-          <h2 class="section-title" style="margin-bottom: 20px;">Connect With AcreFi</h2>
-          <p class="section-desc" style="margin-bottom: 24px;">
-            Have questions about AcreFi protocol layers, architecture configurations, or institutional liquidity opportunities? Get in touch with our team directly.
-          </p>
-          <div style="font-size: 15px; color: var(--text-dark); font-weight: 600;">
-            <p style="margin-bottom: 8px;">📍 Global Infrastructure Hub</p>
-            <p>✉ partner@acrefi.io</p>
+  <section class="cta-band">
+    <div class="container cta-band-inner">
+      <div class="cta-band-left">
+        <span class="section-tag">✦ Ready to build with AcreFi?</span>
+        <h2>Bring productive stablecoin infrastructure into your product stack.</h2>
+      </div>
+      <div class="cta-band-right">
+        <a href="#contact" class="btn btn-primary btn-lg">Contact the team</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-left">
+        <span class="section-tag">✦ Contact Us</span>
+        <h2>Let’s grow together</h2>
+        <p>
+          Have questions about BloomFi, partnerships, developer integrations, or treasury use cases?
+          Send us a message and we’ll get back to you as soon as possible.
+        </p>
+
+        <div class="contact-points">
+          <div class="contact-point">
+            <span class="contact-point-title">Email</span>
+            <span class="contact-point-text">hello@AcreFi.xyz</span>
+          </div>
+          <div class="contact-point">
+            <span class="contact-point-title">Partnerships</span>
+            <span class="contact-point-text">partnerships@AcreFi.xyz</span>
+          </div>
+          <div class="contact-point">
+            <span class="contact-point-title">Developers</span>
+            <span class="contact-point-text">dev@AcreFi.xyz</span>
           </div>
         </div>
-
-        <div class="contact-form-box">
-          <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Successfully registered for the AcreFi waitlist!');">
-            <div class="form-group">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" placeholder="Enter your name" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Work Email</label>
-              <input type="email" id="email" name="email" placeholder="name@company.com" required />
-            </div>
-            <div class="form-group">
-              <label for="message">Message / Context</label>
-              <textarea id="message" name="message" rows="4" placeholder="Tell us how you'd like to use AcreFi..." required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 14px;">Submit Inquiry</button>
-          </form>
-        </div>
       </div>
-    </section>
-  </main>
+
+      <div class="contact-form-box">
+        <form>
+          <div class="input-group">
+            <label for="name">Full Name</label>
+            <input id="name" type="text" placeholder="Enter your full name" />
+          </div>
+          <div class="input-group">
+            <label for="email">Email Address</label>
+            <input id="email" type="email" placeholder="Enter your email" />
+          </div>
+          <div class="input-group">
+            <label for="company">Company / Organization</label>
+            <input id="company" type="text" placeholder="Your company or team name" />
+          </div>
+          <div class="input-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Tell us how you'd like to use BloomFi..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary contact-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
   <footer class="main-footer">
     <div class="container footer-grid">
       <div class="footer-col brand-col">
-        <div class="footer-brand">
+        <a href="#" class="footer-brand">
           <span class="brand-mark">✦</span>
-          <span class="brand-text">AcreFi</span>
-        </div>
+          <span class="brand-text">BloomFi</span>
+        </a>
         <p class="footer-brand-text">
-          AcreFi is building programmable stablecoin infrastructure for capital-efficient, yield-bearing digital dollars.
+          AcreFi is building programmable stablecoin infrastructure for capital-efficient,
+          yield-bearing digital dollars.
         </p>
         <div class="social-links">
           <a href="#">in</a>
